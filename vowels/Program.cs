@@ -10,6 +10,16 @@ namespace vowels
     {
         static void Main(string[] args)
         {
+            char[] vowels = { 'A', 'a', 'E', 'e', 'i', 'I', 'o', 'O', 'u', 'U'};
+            string str = "How was your day, Edward?";
+
+            foreach(var vowelcharacter in vowels)
+            {
+                str = str.Replace(vowelcharacter, '_');
+            }
+
+            Console.WriteLine(str);
+            Console.ReadLine();
         }
     }
 }
